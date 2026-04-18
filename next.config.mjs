@@ -12,3 +12,15 @@ const nextConfig = {
 }
 
 export default nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  webpack(config) {
+    config.experiments = {
+      asyncWebAssembly: true,
+      ...config.experiments,
+    }
+    return config
+  },
+}
+
+module.exports = nextConfig
