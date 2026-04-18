@@ -9,11 +9,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
-
-export default nextConfig
-/** @type {import('next').NextConfig} */
-const nextConfig = {
   webpack(config) {
     config.experiments = {
       asyncWebAssembly: true,
